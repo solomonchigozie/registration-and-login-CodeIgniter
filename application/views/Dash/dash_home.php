@@ -18,11 +18,18 @@ if(!$_SESSION['u_name']){
 <body>
 
     <!-- nav bar -->
-       <?php $this->load->view('dash/inc/nav') ?>
+        <?php $this->load->view('dash/inc/nav') ?>
     <!-- nav bar -->
+    <div class="container mt-3">
+        <div class="row">
+            <div class="col-md-3">
+                <?php $this->load->view('dash/inc/sidebar'); ?>
+            </div>
+        </div>
+    </div>
 
 
-Welcome <?php echo  $_SESSION['u_name']; ?>
+    <?php // echo  $_SESSION['u_name']; ?>
 
     <script src="<?php echo base_url()?>assets/jquery/jquery.min.js"></script>
     <script src="<?php echo base_url()?>assets/js/bootstrap.min.js"></script>
